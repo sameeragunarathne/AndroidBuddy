@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidbuddy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="6"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.androidbuddy.AppMenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.APPMENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.CallLogActivity"
+            android:label="Call Log" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.CALLLOGACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.OptionMenuActivity"
+            android:label="Option Menu" >
+      
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.datastoreactivity.AddCallLogActivity"
+            android:label="Add Call Log" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.datastoreactivity.ADDCALLLOGACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.ProfileActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.PROFILEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.RegisterActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.REGISTERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.UserSettingsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.MessegeLogTab"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.MESSEGELOGTAB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.CallLogTab"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.CALLLOGTAB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.LogMenuListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.LOGMENULISTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Inbox Activity -->
+        <activity
+            android:name="com.example.androidbuddy.InboxActivity"
+            android:label="@string/app_name" />
+
+        <!-- Outbox Activity -->
+        <activity
+            android:name="com.example.androidbuddy.OutboxActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.androidbuddy.featureactivities.AdvancedSearchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.featureactivities.ADVANCEDSEARCHACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.featureactivities.SearchResultActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.featureactivities.SEARCHRESULTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.interfaceactivities.MessegeDisplayActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.featureactivities.MESSEGEDISPLAYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.MissedCallActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.MISSEDCALLACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidbuddy.WebHistoryActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidbuddy.WEBHISTORYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.androidbuddy.services.BatteryLevelReceiver" />
+        <receiver android:name="com.example.androidbuddy.AlarmReceiver" />
+        <receiver
+            android:name="com.example.androidbuddy.services.BootStartupReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.example.androidbuddy.services.BatteryNotifyService"
+            android:enabled="true" />
+        <service
+            android:name="com.example.androidbuddy.TaskService"
+            android:enabled="true" />
+        <service
+            android:name="com.example.androidbuddy.services.OnBootRunService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="app_options">
+        <item>Search</item>
+        <item>Profile</item>
+        <item>Backup</item>
+        <item>Settings</item>
+        <item>Logs</item>
+        <item>Help</item>
+    </string-array>
+    
+    <string-array name="log_options">
+        <item>CallLog</item>
+        <item>MessegeLog</item>
+        <item>Web History</item>
+    </string-array>
+</resources>

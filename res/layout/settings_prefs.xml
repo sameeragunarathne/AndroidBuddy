@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:title="@string/settings" >
+
+    <PreferenceCategory android:title="@string/options" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_call-log"
+            android:summary="Tick to set this option"
+            android:title="@string/option_one" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_messege_log"
+            android:summary="Tick to set this option"
+            android:title="@string/option_two" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_contact"
+            android:summary="Tick to set this option"
+            android:title="@string/option_three" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/server_options" >
+
+        <ListPreference
+            android:entries="@array/syncFrequency"
+            android:entryValues="@array/syncFrequencyValues"
+            android:key="sync_period"
+            android:summary="select server call back time"
+            android:title="@string/sync_time" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

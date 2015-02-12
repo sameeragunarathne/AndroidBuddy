@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+        <CheckBox
+                android:id="@+id/calllog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Log"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:onClick="onCheckboxClicked" />
+             
+            <CheckBox
+                android:id="@+id/messegelog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messege Log"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:onClick="onCheckboxClicked"
+                />
+             
+            <CheckBox
+                android:id="@+id/batteryinspector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:onClick="onCheckboxClicked" />
+    
+</LinearLayout>

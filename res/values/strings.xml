@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidBuddy</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_settings">User Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="settings">Settings</string>
+    <string name="options">Log settings</string>
+    <string name="option_one">Call Log</string>
+    <string name="option_two">Messege Log</string>
+    <string name="option_three">Contacts</string>
+    
+    <string name="server_options">Server settings</string>
+    <string name="sync_time">Server Communication</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="spinner2_title">Select Sub Category</string>
+    <string name="spinner3_title">Select Time Period</string>
+    
+    
+
+</resources>
